@@ -6,13 +6,13 @@ const BoxDisplay = (props) => {
     return (
         <div>
             {
-                boxColorList.map((color, index) => (
+                boxColorList.map((box, index) => (
                     <div key={index} style={{
                         display: 'inline-block',
                         margin: '10px',
-                        backgroundColor: color,
-                        width: '50px',
-                        height: '50px'
+                        backgroundColor: box.color,
+                        width: box.size,
+                        height: box.size
                     }}></div>
                 ))
             }
